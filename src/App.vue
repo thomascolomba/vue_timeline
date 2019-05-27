@@ -1,16 +1,19 @@
 <template>
   <div id="app">
+    <RoutingManager/>
     <Timeline/>
     <router-view/>
   </div>
 </template>
 <script>
 import Timeline from '@/components/Timeline/Timeline.fragment.vue'
+import RoutingManager from '@/components/RoutingManager/RoutingManager.fragment.vue'
 
 export default {
   name: 'app',
   components: {
-    Timeline
+    Timeline,
+    RoutingManager
   }
 }
 </script>
